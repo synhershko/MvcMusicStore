@@ -17,7 +17,8 @@ namespace MvcMusicStore.Controllers
     public class CheckoutController : Controller
     {
         const string PromoCode = "FREE";
-        private IDocumentSession session = MvcApplication.CurrentSession;
+        private readonly IDocumentSession session = MvcApplication.CurrentSession;
+
         //
         // GET: /Checkout/AddressAndPayment
 

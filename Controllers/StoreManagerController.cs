@@ -66,7 +66,7 @@ namespace MvcMusicStore.Controllers
             {
                 Album = new Album { Artist = new Album.AlbumArtist(), Genre = new Album.AlbumGenre() },
                 Genres = session.Query<Genre>().ToList(),
-                Artists = session.Advanced.LuceneQuery<Album.AlbumArtist>().ToList()
+                Artists = session.Query<Album.AlbumArtist>().ToList()
             };
 
             return View(viewModel);
