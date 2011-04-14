@@ -1,0 +1,4 @@
+Plugins/
+Data/*
+Raven.Server.log
+Raven.Server.log.*
